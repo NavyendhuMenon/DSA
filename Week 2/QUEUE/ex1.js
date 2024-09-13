@@ -1,39 +1,63 @@
 
-
 class Queue {
 
     constructor(){
-        this.items =[]
+        this.items = []
     }
 
-
-    enqueue (ele){
-        return this.items.push(ele)
+    enqueue(ele){
+        this.items.push(ele);
     }
 
     dequeue (){
-        return this.items.shift()
+        return this.items.shift();
     }
 
     isEmpty(){
-        return this.items.length===0
+        return this.items.length === 0;
     }
 
     peek(){
         if (!this.isEmpty()){
-            return this.items[0]
+            return this.items[0];
         }
-
-        return null
+        return null;
     }
    
     size(){
-        this.items.length
+        return this.items.length;
     }
 
     print(){
-        console.log(this.items.toString(fi))
+        console.log(this.items.toString());
+    }
+}
+
+
+class queue1{
+    constructor (){
+        this.item =[]
     }
 
+    enqueue(el){
+        this.item.push(el)
+    }
 
+    dequeue(el){
+        this.item.shift (el)
+    }
+
+    
 }
+
+
+const queue = new Queue();
+queue.enqueue(1);
+queue.enqueue(2);
+queue.enqueue(3);
+console.log(queue.peek()); 
+queue.print();            
+console.log(queue.size()); 
+queue.dequeue();
+queue.print();            
+console.log(queue.size()); 

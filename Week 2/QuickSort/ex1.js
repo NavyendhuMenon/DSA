@@ -1,6 +1,5 @@
 
 
-
 function quickSort (arr){
 
     if(arr.length<2){

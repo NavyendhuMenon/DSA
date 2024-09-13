@@ -17,7 +17,6 @@ function insertionSort (arr){
         console.log(" loop exit arr j+1",arr[j+1])
         console.log(insertion)
 
-        //here it becomes decremented j+1 
         arr[j+1] = insertion
         console.log("after assigning",arr[j+1])
     }
