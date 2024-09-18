@@ -28,7 +28,7 @@ class Stack {
             console.log("Stack underflow!!, cannot pop")
         }
 
-        this.item.pop() 
+       return this.item.pop() 
     }
 
     display() {
