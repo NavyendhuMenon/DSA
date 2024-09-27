@@ -9,12 +9,11 @@ function isBalanced(s) {
     for (let char of s) {
         
         if (brackets[char]) {
-            // If it's an opening bracket, push it to the stack
             stack.push(char);
         } else {
-            // If it's a closing bracket
+        
             if (stack.length === 0) {
-                // Stack is empty but found a closing bracket
+                
                 return false;
             }
             const topElement = stack.pop();
