@@ -47,7 +47,7 @@ class Stack2{
         }
     }
     peek() {
-        return this.isEmpty() ? "Stack is empty" : this.items[this.items.length - 1];
+        return this.isEmpty() ? "Stack is empty" : this.item[this.item.length - 1];
     }
 
 
