@@ -1,7 +1,7 @@
 
 function mergeSort (arr){
 
-    if(arr.length < 2) return arr
+    if(arr.length <= 1) return arr
 
     let mid = Math.floor(arr.length/2)
     let left = arr.slice(0,mid)
@@ -17,7 +17,7 @@ function merge(left,right){
 
     while(left.length && right.length){
 
-        if(left[0]>right[0]){
+        if(left[0]<right[0]){
 
             sorted.push(left.shift())
         }else{
