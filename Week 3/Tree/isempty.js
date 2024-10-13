@@ -14,4 +14,12 @@ class BinarySearchTree{
     constructor(){
         this.root = null
     }
+
+    isEmpty(){
+        return this.root === null
+    }
 }
+
+let bst = new BinarySearchTree()
+
+console.log('Tree is Empty??', bst.isEmpty());
