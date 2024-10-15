@@ -49,6 +49,23 @@ class BinarySearchTree{
         }
     }
 
+    search(root,value){
+        if(!root){
+            return false
+        }else{
+            if(root.value === value){
+                return true
+            }else{
+
+                if(value<root.value){
+                    return this.search(root.left,value)
+                }else{
+                    return this.search(root.right, value)
+                }
+            }
+        }
+    }
+
     min(root){
 
         if(!root.left){
@@ -77,6 +94,9 @@ bst.insert(5)
 bst.insert(15)
 bst.insert(3)
 bst.insert(7)
+
+console.log(bst.search(bst.root, 15))
+console.log(bst.search(bst.root, 25))
 
 console.log("Max value:", bst.max(bst.root)) 
 console.log("Min value:", bst.min(bst.root))
