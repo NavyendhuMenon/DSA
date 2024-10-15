@@ -38,9 +38,9 @@ graph.addVertex('A');
 graph.addVertex('B');
 graph.addVertex('C');
 
-// Add edges
+
 graph.addEdges('A', 'B');
 graph.addEdges('B', 'C');
 
-// Display the graph
+
 graph.display();
