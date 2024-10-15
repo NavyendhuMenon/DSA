@@ -17,7 +17,7 @@ class Graph {
 
     addEdges(vertex1, vertex2){
 
-        this.addVertex(vertex1); // Ensure vertex1 exists
+        this.addVertex(vertex1); 
         this.addVertex(vertex2);
 
         this.adjacencyList[vertex1].add(vertex2)
