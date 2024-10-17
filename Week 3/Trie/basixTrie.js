@@ -27,4 +27,9 @@ class Trie {
 const trie = new Trie();
 trie.insert("hello");
 trie.insert("world");
-console.log("Inserted words into Trie.");
+console.log("Inserted words into Trie.")
+
+
+
+
+
