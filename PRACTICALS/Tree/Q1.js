@@ -68,6 +68,23 @@ class BinarySearchTree{
 
         return [...this.inOrderTraversal(root.left), root.value, ...this.inOrderTraversal(root.right)]
     }
+
+
+    isSymmetric(root){
+
+        if (!root) return true;
+
+        return this.isMirror(root.left, root.right)
+
+    }
+
+    isMirror(l,r){
+
+        if(!l && !r) return true
+        if(!l || !r || l.value !== r.value) return false
+
+        return this.isMirror(l.left, r.right) && this.isMirror(l.right, r.left)
+    }
 }
 
 
@@ -82,4 +99,6 @@ Tree.insert(6)
 console.log("Pre-order Traversal:", Tree.preOrderTraversal(Tree.root));
 console.log("In-order Traversal:", Tree.inOrderTraversal(Tree.root));
 console.log("Post-order Traversal:", Tree.postOrderTraversal(Tree.root));
+
+console.log(Tree.isSymmetric(Tree.root))
 
